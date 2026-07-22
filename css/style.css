@@ -82,6 +82,264 @@ nav a:hover{
     color: #1a49a0; 
 }
 
+/*Seccion Hero*/
+.hero{
+    display:flex;
+    /*Cambiamos la dirección a columna, para que se vean las cosas una debajo de la otra*/
+    flex-direction: column;
+    
+    /*centramos el contenido vertical y horizontalmente*/
+    justify-content: center;
+    align-items: center;
+
+    /*le damos una altura minima*/
+    min-height:100vh;
+
+    /*Espacio entre los elementos*/
+    gap:20px;
+
+    /*Padding, para que no se pegue a los border*/
+    padding: 0 50px;
+
+    /* Imagen de fondo */
+    background-image: linear-gradient(
+        rgba(26, 73, 160, 0.65),  /* Azul (#1a49a0) con 65% de opacidad */
+        rgba(144, 66, 222, 0.75)  /* Púrpura/Violeta (#9042de) con 75% de opacidad */
+    ),
+    url('../assets/img/hero-bg.jpg');
+
+    /*Estilos para que la imagen no se repita y ocupe todo el espacio*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}    
+
+.hero h1{
+    font-size: 100px;
+    color:#fff;
+    text-align:center;
+
+    max-width: 1500px; /* Amplía el ancho para que no fuerce un salto a la 3ª línea */
+    margin: 0 auto 20px auto;
+    line-height: 1.25;
+}
+
+.hero h1 .destacado{
+    color: #FFD166; /* Amarillo destacado*/
+    text-shadow: 3px 3px 2px rgba(26, 73, 160, 0.8);
+}
+
+.hero p{
+    color:#fff;
+    font-size: 1.8rem;
+}
+
+.hero button{
+    background-color: #FFFFFF;
+    color: #1E2947; /* Azul marino oscuro */
+    padding: 14px 32px;
+    border-radius: 50px; /* Bordes redondeados/píldora lucen muy bien en fotografía */
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #E1BEE7; /* Transición suave al lavanda */
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.servicios, .porfolio, .contacto{
+    display:flex;
+    /*Cambiamos la dirección a columna, para que se vean las cosas una debajo de la otra*/
+    flex-direction: column;
+    
+    /*centramos el contenido vertical y horizontalmente*/
+    justify-content: center;
+    align-items: center;
+
+    /*le damos una altura minima*/
+    min-height:100vh;
+
+    /*Espacio entre los elementos*/
+    gap:15px;
+
+    /*Le ponemos padding, para que no se pegue a los border*/
+    padding: 0 40px;
+}
+
+.servicios h2, .contacto h2{
+    font-size: 50px;
+    color:#010225;
+}
+
+.servicios p, .contacto p{
+    color:#010225;
+    font-size: 1.2rem;
+}
+
+.tarjetas{
+    display:flex;
+    /*Cambiamos la dirección a columna, para que se vean las cosas una debajo de la otra*/
+    flex-direction: row;
+    
+    /*centramos el contenido verticalmente*/
+    justify-content: center;
+    gap:20px 30px;
+
+    /* Para que en pantallas más pequeñas se adapten hacia abajo */
+    flex-wrap: wrap; 
+
+    /*le damos una altura minima*/
+    min-height:50vh;
+
+    /*Para darle un poco de espacio con el texto de arriba*/
+    margin-top:50px;
+}
+
+/* Cada tarjeta individual */
+.tarjetas article,
+.tarjetas div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinea el contenido arriba para que las fotos queden alineadas */
+    align-items: center;
+    gap: 12px;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 300px; /* Ancho fijo para que todas las tarjetas sean homogéneas */
+    transition: transform 0.3s ease;
+    /*background-color:red;*/
+    overflow: hidden; /* Recorta la foto para que respete las esquinas redondeadas de la tarjeta */
+}
+
+.tarjetas article{
+    box-shadow: 6px 10px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil para despegar del fondo */
+    padding: 0 0 20px 0;
+}
+
+.tarjetas article:hover,
+.tarjetas div:hover {
+    transform: translateY(-5px); /* Efecto elevación suave */
+}
+
+.tarjeta-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Altura fija para que no se vean gigantes */
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.tarjeta-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+/* Capa de degradado con tus colores corporativos sobre la imagen */
+.tarjeta-img-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        135deg,
+        rgba(26, 73, 160, 0.45),  /* Azul Cobalto #1a49a0 */
+        rgba(144, 66, 222, 0.55)  /* Púrpura Vibrante #9042de */
+    );
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.tarjetas article:hover .tarjeta-img-wrapper img,
+.tarjetas div:hover .tarjeta-img-wrapper img {
+    transform: scale(1.08); /* Zoom a la imagen en hover */
+}
+
+.tarjetas article .titlecard,
+.tarjetas div .titlecard {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #112347;
+    margin-top: 5px;
+}
+
+/**/
+.porfolio{
+    background-color:#010225;
+    color:#fff;
+}
+
+.porfolio h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    color:#be1e2d;
+}
+
+.porfolio p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:##fff;
+    font-size: 1.2rem;
+}
+
+.portfolio-grid {
+    display: grid;
+    /* 3 columnas de igual ancho */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /* Al menos 3 filas con una altura mínima de 200px cada una */
+    grid-template-rows: repeat(3, minmax(200px, auto));
+    /* Espaciado entre elementos (menos arriba/abajo, más a los lados) */
+    gap: 15px 25px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.portfolio-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+}
+
+.item-1 { 
+    background-color: #3498db; 
+    /* Este elemento ocupará 2 filas de alto */
+    grid-row: span 2; 
+}
+
+.item-2 { background-color: #e74c3c; }
+.item-3 { background-color: #2ecc71; }
+
+.item-4 { 
+    background-color: #9b59b6; 
+    /* Este elemento ocupará 2 columnas de ancho */
+    grid-column: span 2; 
+}
+
+.item-5 { background-color: #f1c40f; }
+.item-6 { background-color: #e67e22; }
+.item-7 { background-color: #3829be; }
+
 /*Footer inferior de la web*/
 .footer-copyright {
     text-align: center;
