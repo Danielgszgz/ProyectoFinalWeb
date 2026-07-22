@@ -3,26 +3,44 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Titulo de la página</title>
+        <title>Aura Fotogría</title>
         <meta name="author" content="Daniel García">
-        <meta name="description" content="Una breve descripción de lo que trata tu página web.">
-        <link rel="stylesheet" href="css/styles.css">
+        <meta name="description" content="Empresa de fotografia">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <!-- Header de la web -->
-        <header> 
+        <div class="container">
+            <!-- Header de la web -->
+            <header id="inicio">
+                <img class="logo" src="assets/img/Logo_Aura_Fotografia_220.png" alt="logo_alumnos-mdigital">
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="views/galeria.html">Galeria</a></li>
+                        <li><a href="views/presupuesto.html">Presupuesto</a></li>
+                        <li><a href="views/contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-        </header>
-        <!-- Contenido principal -->
-        <main>
+            <!-- Boton para subir arriba de la web-->
+            <a href="#" class="boton-subir" aria-label="Volver arriba">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="icono-flecha">
+                    <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+            </a>
 
-        </main>
-        <!-- Pie de la web-->
-        <footer>
-            <p>Copyright 2026 - Recetas Caseras</p>
-        </footer>
+            <!-- Contenido principal -->
+            <main>
+
+            </main>
+            <!-- Pie de la web-->
+            <div class="footer-copyright">
+                <p>&copy; 2026 Aura Fotogría. Todos los derechos reservados.</p>
+            </div>
+        </div>
     </body>
 </html>

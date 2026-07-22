@@ -1,6 +1,128 @@
 /* Estilos de reseteo */
-body {
-    font-family: 'Fredoka', sans-serif;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+.container {
+    /*Usamos el sistema grid, para crear el layaur de la web */
+    display: grid;
+    /* Ahora definimos las filas: 
+       header (automático), main (ocupar el espacio restante), footer (automático) */
+    grid-template-rows: auto 1fr auto; 
+    gap: 5px;
+    min-height: 100vh; /*Hace que el diseño ocupe como minimo 100vh de alto de la pantalla*/
+
+    /* Reglas para centrar y tener un ancho máximo */
+    max-width: 100%;  /* No pasará de 1200px de ancho */
+    margin: 0 auto;     /* Centra el contenedor en la pantalla */
+
+    /*background-color: red;*/
+
+    /*Estilos de fuente de texto, para generalizar todo el texto de la web*/
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; /* Regular para el texto general */
+    color: #1E2947;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6{
+    /*Tipografia de los titulos de toda la web*/
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* Bold (puedes cambiarlo a 600 si prefieres Semi-Bold) */
+    line-height: 1.2;
+}
+
+header{
+    background-color: #ffffff; /* Color de fondo solo para visualizarlo */
+    color: #1E2947;
+    padding: 20px 50px;
+
+    display: flex;
+    /* Empuja el logo a la izquierda y el nav a la derecha */
+    justify-content: space-between; 
+    /* Alinea verticalmente el logo y el menú para que queden centrados entre sí */
+    align-items: center;
+
+    /*Dejamos fija la cabecera arriba y que se desplace con nosotros por la página*/
+    position: sticky; 
+    top: 0;
+}
+
+.logo{
+    width: auto;
+    height:100%;
+}
+
+/* Convertimos la lista del menú en Flex para poner los enlaces en línea */
+nav ul {
+    display: flex;
+    list-style: none; /* Quita los puntos negros de la lista */
+    margin: 0;
+    padding: 0;
+    gap: 20px; /* Crea una separación de 20px entre cada enlace */
+}
+
+nav a {
+    text-decoration: none; /*Quitamos el subrayado por defecto de los enlaces*/
+    font-size: 1.5rem;
+
+    color: #1E2947;
+    font-weight: bold;
+}
+
+nav a:visited, 
+nav a:active {
+    /* Forzamos a que mantenga exactamente el mismo color de arriba */
+    color: #1a49a0; 
+}
+
+nav a:hover{
+    color: #1a49a0; 
+}
+
+/*Footer inferior de la web*/
+.footer-copyright {
+    text-align: center;
+    margin-top: 40px;      /* Separa el copyright de las 3 columnas de arriba */
+    padding-top: 20px;     /* Espacio interno sobre el texto */
+}
+
+.footer-copyright p {
+    color: #1a2d56;        /* Un color gris más suave para que no resalte tanto */
+    font-size: 0.9rem;     /* Un tamaño de letra un poco más pequeño */
+    margin: 0;
+}
+
+/*Botin que permite subir a la parte superior de la web*/
+.boton-subir {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    background-color: #fba319; /* Color de fondo inicial */
+    color: #ffffff;            /* Color de la flecha */
+    border-radius: 50%;        /* Lo hace completamente redondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+    z-index: 9999;             /* Se asegura de quedar por encima de todo */
+    transition: all 0.3s ease; /* Transición suave para el efecto hover */
+    text-decoration: none;
+}
+
+/* Tamaño del icono SVG */
+.icono-flecha {
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+}
+
+/* EFECTO HOVER (Al pasar el ratón) */
+.boton-subir:hover {
+    background-color: #be1e2d; /* Cambia al color rojo de tu logo */
+    transform: scale(1.1);     /* Crece un 10% en tamaño */
 }

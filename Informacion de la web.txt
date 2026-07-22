@@ -1,0 +1,22 @@
+Azul Marino Oscuro -> #1a2d56 -> Usado para el texto principal y el obturador. Úsalo para encabezados grandes (H1, H2) y el pie de página.
+
+Azul Cobalto / Índigo -> #1a49a0 -> Parte del degradado del aura. Ideal para botones (Call to Action), enlaces activos y elementos destacados.
+
+Púrpura / Violeta Vibrante -> #9042de -> Transición del aura. Úsalo para fondos muy sutiles, estados 'hover' suaves o divisores.
+
+#FFFFFF (Blanco Puro) -> O un gris muy claro. Esencial para que las fotografías destaquen sin distracciones.
+
+Tipografías
+-------------
+- Para Encabezados y el nombre "Aura":
+Recomendación Google Fonts: Poppins (en su variante Bold o Semi-Bold).
+
+Por qué: Es una sans-serif geométrica perfecta, moderna y con mucha personalidad para títulos.
+
+
+- Para el texto "Fotografía" y Cuerpo de Texto:
+Recomendación Google Fonts: Poppins (en su variante Regular o Light). O puedes combinarla con Inter si buscas máxima legibilidad en párrafos largos.
+
+Por qué: Usar la misma familia (Poppins) en diferentes pesos asegura la consistencia que pedías. "Inter" es una alternativa excelente si tienes bloques de texto muy extensos.
+
+--------------------
