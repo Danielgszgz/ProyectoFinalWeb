@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aura Fotogría</title>
+        <meta name="author" content="Daniel García">
+        <meta name="description" content="Empresa de fotografia, con 8 años en el sector, capturando los momentos mas personales de miles de personas ">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- Header de la web -->
+            <header id="inicio">
+                <img class="logo" src="../assets/img/Logo_Aura_Fotografia_220.png" alt="logo_alumnos-mdigital">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="#">Galeria</a></li>
+                        <li><a href="views/presupuesto.html">Presupuesto</a></li>
+                        <li><a href="views/contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Boton para subir arriba de la web-->
+            <a href="#" class="boton-subir" aria-label="Volver arriba">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="icono-flecha">
+                    <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+            </a>
+
+            <!-- CABECERA PRINCIPAL TIPO HERO -->
+            <section class="galeria-hero">
+                <div class="galeria-hero-content">
+                    <h1>Nuestra Galería</h1>
+                    <p>Explora nuestras capturas divididas por momentos especiales.</p>
+                    
+                    <!-- Filtros / Accesos directos centrados -->
+                    <nav class="galeria-nav">
+                        <a href="#bodas" class="btn-filtro">Bodas</a>
+                        <a href="#comuniones" class="btn-filtro">Comuniones</a>
+                        <a href="#bautizos" class="btn-filtro">Bautizos</a>
+                        <a href="#otros-eventos" class="btn-filtro">Otros Eventos</a>
+                    </nav>
+                </div>
+            </section>
+
+            <!-- Contenido principal -->
+            <main class="galeria-container">
+
+                <!-- BODAS -->
+                <section id="bodas" class="galeria-seccion">
+                    <h2>Bodas</h2>
+                    <div class="grid-fotos">
+                        <div class="foto-item">
+                            <!-- Enlace al modal -->
+                            <a href="#lightbox-boda1">
+                                <img src="../assets/img/galeria/boda_mariajorge.jpeg" alt="Boda de Maria y Jorge">
+                            </a>
+                        </div>
+                        <div class="foto-item">
+                            <!-- Enlace al modal -->
+                            <a href="#lightbox-boda2">
+                                <img src="../assets/img/galeria/boda_luismarta.jpg" alt="Boda de Luis y Marta" class="fotoboda2">
+                            </a>
+                        </div>
+                        <div class="foto-item">
+                            <!-- Enlace al modal -->
+                            <a href="#lightbox-boda3">
+                                <img src="../assets/img/galeria/boda_damiansoraya.jpg" alt="Boda de Damian y Soraya">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- COMUNIONES -->
+                <section id="comuniones" class="galeria-seccion">
+                    <h2>Comuniones</h2>
+                    <div class="grid-fotos">
+                        <div class="foto-item">
+                            <!-- Enlace al modal -->
+                            <a href="#lightbox-comunion1">
+                                <img src="../assets/img/galeria/comunion_fabian.jpg" alt="Comunión de Fabian" class="fotocomunion1">
+                            </a>
+                        </div>
+                        <div class="foto-item">
+                            <!-- Enlace al modal -->
+                            <a href="#lightbox-comunion2">
+                                <img src="../assets/img/galeria/comunion_vega.jpg" alt="Comunión de Vega">
+                            </a>
+                        </div>
+                        <div class="foto-item">
+                            <!-- Enlace al modal -->
+                            <a href="#lightbox-comunion3">
+                                <img src="../assets/img/galeria/comunion_lauracarlos.jpg" alt="Comunión de laura y Carlos">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- BAUTIZOS -->
+                <section id="bautizos" class="galeria-seccion">
+                    <h2>Bautizos</h2>
+                    <div class="grid-fotos">
+                        <div class="foto-item"><img src="assets/img/galeria/bautizo-1.jpg" alt="Bautizo 1"></div>
+                        <div class="foto-item"><img src="assets/img/galeria/bautizo-2.jpg" alt="Bautizo 2"></div>
+                    </div>
+                </section>
+
+                <!-- OTROS EVENTOS -->
+                <section id="otros-eventos" class="galeria-seccion">
+                    <h2>Otros Eventos</h2>
+                    <div class="grid-fotos">
+                        <div class="foto-item"><img src="assets/img/galeria/evento-1.jpg" alt="Cumpleaños"></div>
+                        <div class="foto-item"><img src="assets/img/galeria/evento-2.jpg" alt="Sesión de fotos"></div>
+                    </div>
+                </section>
+
+            </main>
+            <!-- Pie de la web-->
+            <div class="footer-copyright">
+                <p>&copy; 2026 Aura Fotografía. Todos los derechos reservados.</p>
+            </div>
+        </div>
+
+        <!-- Popups de las imagenes-->
+        <div id="lightbox-boda1" class="lightbox">
+            <!-- Enlace transparente para cerrar al pulsar fuera o en la 'X' -->
+            <a href="#bodas" class="lightbox-cerrar-bg"></a>
+            
+            <div class="lightbox-contenido">
+                <a href="#bodas" class="btn-cerrar">&times;</a>
+                <img src="../assets/img/galeria/boda_mariajorge.jpeg" alt="Boda de Maria y Jorge">
+            </div>
+        </div>
+
+        <div id="lightbox-boda2" class="lightbox">
+            <!-- Enlace transparente para cerrar al pulsar fuera o en la 'X' -->
+            <a href="#bodas" class="lightbox-cerrar-bg"></a>
+            
+            <div class="lightbox-contenido">
+                <a href="#bodas" class="btn-cerrar">&times;</a>
+                <img src="../assets/img/galeria/boda_luismarta.jpg" alt="Boda de Luis y Marta">
+            </div>
+        </div>
+
+        <div id="lightbox-boda3" class="lightbox">
+            <!-- Enlace transparente para cerrar al pulsar fuera o en la 'X' -->
+            <a href="#bodas" class="lightbox-cerrar-bg"></a>
+            
+            <div class="lightbox-contenido">
+                <a href="#bodas" class="btn-cerrar">&times;</a>
+                <img src="../assets/img/galeria/boda_damiansoraya.jpg" alt="Boda de Damian y Soraya">
+            </div>
+        </div>
+
+        <div id="lightbox-comunion1" class="lightbox">
+            <!-- Enlace transparente para cerrar al pulsar fuera o en la 'X' -->
+            <a href="#comuniones" class="lightbox-cerrar-bg"></a>
+            
+            <div class="lightbox-contenido">
+                <a href="#comuniones" class="btn-cerrar">&times;</a>
+                <img src="../assets/img/galeria/comunion_fabian.jpg" alt="Comunión de Fabian">
+            </div>
+        </div>
+
+        <div id="lightbox-comunion2" class="lightbox">
+            <!-- Enlace transparente para cerrar al pulsar fuera o en la 'X' -->
+            <a href="#comuniones" class="lightbox-cerrar-bg"></a>
+            
+            <div class="lightbox-contenido">
+                <a href="#comuniones" class="btn-cerrar">&times;</a>
+                <img src="../assets/img/galeria/comunion_vega.jpg" alt="Comunión de Vega">
+            </div>
+        </div>
+
+        <div id="lightbox-comunion3" class="lightbox">
+            <!-- Enlace transparente para cerrar al pulsar fuera o en la 'X' -->
+            <a href="#comuniones" class="lightbox-cerrar-bg"></a>
+            
+            <div class="lightbox-contenido">
+                <a href="#comuniones" class="btn-cerrar">&times;</a>
+                <img src="../assets/img/galeria/comunion_lauracarlos.jpg" alt="Comunión de Laura y Carlos">
+            </div>
+        </div>
+    </body>
+</html>
