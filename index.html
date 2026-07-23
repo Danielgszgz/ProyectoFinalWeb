@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Aura Fotogría</title>
         <meta name="author" content="Daniel García">
-        <meta name="description" content="Empresa de fotografia">
+        <meta name="description" content="Empresa de fotografia, con 8 años en el sector, capturando los momentos mas personales de miles de personas ">
         <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +40,9 @@
                 <section class="hero">
                     <h1>Capturamos <span class="destacado">tus momentos</span> más importantes</h1>
                     <p>Que lo efímero dure para siempre.</p>
-                    <button>Descubre cómo <i class="fa-solid fa-angles-right"></i></button>
+                    <a href="views/contacto.html" class="btn-aura">
+                        Descubre cómo <i class="fa-solid fa-angles-right"></i>
+                    </a>
                 </section>
                 <section class="servicios">
                     <h2>Servicios</h2>
@@ -48,52 +50,72 @@
                     
                     <div class="tarjetas">
                         <!-- Servicio: Bodas -->
-                        <article class="tarjeta">
-                            <div class="tarjeta-img-wrapper">
-                                <img src="assets/img/bodas.jpg" alt="Fotografía de Bodas">
-                            </div>
-                            <h3 class="titlecard">Bodas</h3>
-                        </article>
+                        <a href="views/galeria.html" class="tarjeta-link">
+                            <article class="tarjeta">
+                                <div class="tarjeta-img-wrapper">
+                                    <img src="assets/img/bodas.jpg" alt="Fotografía de Bodas">
+                                </div>
+                                <h3 class="titlecard">Bodas</h3>
+                            </article>
+                        </a>
 
                         <!-- Servicio: Comuniones -->
-                        <article class="tarjeta">
-                            <div class="tarjeta-img-wrapper">
-                                <img src="assets/img/comunion.jpg" alt="Fotografía de Comuniones">
-                            </div>
-                            <h3 class="titlecard">Comuniones</h3>
-                        </article>
+                        <a href="views/galeria.html" class="tarjeta-link">
+                            <article class="tarjeta">
+                                <div class="tarjeta-img-wrapper">
+                                    <img src="assets/img/comunion.jpg" alt="Fotografía de Comuniones">
+                                </div>
+                                <h3 class="titlecard">Comuniones</h3>
+                            </article>
+                        </a>
 
                         <!-- Servicio: Bautizos -->
-                        <article class="tarjeta">
-                            <div class="tarjeta-img-wrapper">
-                                <img src="assets/img/bautizos.jpg" alt="Fotografía de Bautizos">
-                            </div>
-                            <h3 class="titlecard">Bautizos</h3>
-                        </article>
-
+                        <a href="views/galeria.html" class="tarjeta-link">
+                            <article class="tarjeta">
+                                <div class="tarjeta-img-wrapper">
+                                    <img src="assets/img/bautizos.jpg" alt="Fotografía de Bautizos">
+                                </div>
+                                <h3 class="titlecard">Bautizos</h3>
+                            </article>
+                        </a>
+                        
                         <!-- Servicio: Cumpleaños -->
-                        <article class="tarjeta">
-                            <div class="tarjeta-img-wrapper">
-                                <img src="assets/img/cumpleaños.jpg" alt="Fotografía de Cumpleaños">
-                            </div>
-                            <h3 class="titlecard">Cumpleaños</h3>
-                        </article>
+                        <a href="views/galeria.html" class="tarjeta-link">
+                            <article class="tarjeta">
+                                <div class="tarjeta-img-wrapper">
+                                    <img src="assets/img/cumpleaños.jpg" alt="Fotografía de Cumpleaños">
+                                </div>
+                                <h3 class="titlecard">Cumpleaños</h3>
+                            </article>
+                        </a>
                     </div>
                 </section>
-                <!--<section class="porfolio">
-                    <h2>Porfolio</h2>
-                    <p>Una sección de proyectos recientes</p>
-                    <div class="portfolio-grid">
-                        <div class="portfolio-item item-1">Proyecto 1</div>
-                        <div class="portfolio-item item-2">Proyecto 2</div>
-                        <div class="portfolio-item item-3">Proyecto 3</div>
-                        <div class="portfolio-item item-4">Proyecto 4</div>
-                        <div class="portfolio-item item-5">Proyecto 5</div>
-                        <div class="portfolio-item item-6">Proyecto 6</div>
-                        <div class="portfolio-item item-7">Proyecto 7</div>
+                <section class="sobre-mi">
+                    <div class="sobre-mi-container">
+                        <!-- Columna 1: Foto del fotógrafo/a -->
+                        <div class="sobre-mi-img">
+                            <img src="assets/img/Fotografo.png" alt="Fotógrafo principal de Aura Fotografía" />
+                        </div>
+
+                        <!-- Columna 2: Texto + CTA a Presupuesto -->
+                        <div class="sobre-mi-contenido">
+                            <h2>Detrás de la cámara</h2>
+                            <p class="subtitulo">Hola, soy Daniel García</p>
+                            <p>
+                                Llevo más de 8 años capturando miradas, complicidades y momentos irrepetibles. Mi enfoque se basa en la fotografía natural, sin posados forzados, dejando que las emociones fluyan para contar tu historia tal y como es.
+                            </p>
+                            <p>
+                                Cada boda, comunión o evento es un lienzo único. Mi objetivo es que dentro de 20 años vuelvas a mirar tus fotos y sientas exactamente lo mismo que el primer día.
+                            </p>
+                            
+                            <!-- Botón hacia Presupuesto -->
+                            <a href="views/presupuesto.html" class="btn-aura">
+                                Calcula tu presupuesto <i class="fa-solid fa-angles-right"></i>
+                            </a>
+                        </div>
                     </div>
                 </section>
-                <section class="contacto">
+                <!--<section class="contacto">
                     <h2>Hablemos</h2>
                     <p>Cuéntanos tu proyecto y le responderemos en 24h</p>
                     <form action="#" method="post">
@@ -117,7 +139,7 @@
             </main>
             <!-- Pie de la web-->
             <div class="footer-copyright">
-                <p>&copy; 2026 Aura Fotogría. Todos los derechos reservados.</p>
+                <p>&copy; 2026 Aura Fotografía. Todos los derechos reservados.</p>
             </div>
         </div>
     </body>

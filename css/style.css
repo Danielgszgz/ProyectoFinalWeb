@@ -48,6 +48,8 @@ header{
     /*Dejamos fija la cabecera arriba y que se desplace con nosotros por la página*/
     position: sticky; 
     top: 0;
+
+    z-index: 1000; /*Para que el menu siempre quede encima del resto de elementos.*/
 }
 
 .logo{
@@ -134,25 +136,7 @@ nav a:hover{
     font-size: 1.8rem;
 }
 
-.hero button{
-    background-color: #FFFFFF;
-    color: #1E2947; /* Azul marino oscuro */
-    padding: 14px 32px;
-    border-radius: 50px; /* Bordes redondeados/píldora lucen muy bien en fotografía */
-    font-weight: 600;
-    font-size: 1.2rem;
-    border: none;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-}
-
-.hero button:hover {
-  background-color: #E1BEE7; /* Transición suave al lavanda */
-  transform: translateY(-3px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-}
-
-.servicios, .porfolio, .contacto{
+.servicios, .contacto{
     display:flex;
     /*Cambiamos la dirección a columna, para que se vean las cosas una debajo de la otra*/
     flex-direction: column;
@@ -198,6 +182,26 @@ nav a:hover{
 
     /*Para darle un poco de espacio con el texto de arriba*/
     margin-top:50px;
+}
+
+/* Reseteo para el enlace que envuelve la tarjeta */
+.tarjeta-link {
+    text-decoration: none; /* Elimina el subrayado de enlace */
+    color: inherit;         /* Mantiene el color original de los textos */
+    display: block;        /* Permite que el enlace ocupe todo el espacio de la tarjeta */
+}
+
+/* Ajustes a tu hover existente para activar el zoom al pasar por encima del enlace */
+.tarjeta-link:hover .tarjeta {
+    transform: translateY(-5px); /* Eleva la tarjeta */
+}
+
+.tarjeta-link:hover .tarjeta-img-wrapper img {
+    transform: scale(1.08);     /* Aplica el zoom a la imagen */
+}
+
+.tarjeta-link:hover .tarjeta-img-wrapper::after {
+    opacity: 0.75;              /* Ajusta la capa de color si lo deseas */
 }
 
 /* Cada tarjeta individual */
@@ -272,85 +276,120 @@ nav a:hover{
     margin-top: 5px;
 }
 
-/**/
-.porfolio{
-    background-color:#010225;
-    color:#fff;
+/*Sección sobre mi*/
+.sobre-mi {
+  padding: 80px 20px;
+  background-color: #f9f9fc; /* Un fondo ligeramente diferenciado del blanco */
 }
 
-.porfolio h2{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 50px;
-    color:#be1e2d;
+.sobre-mi-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
-.porfolio p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:##fff;
-    font-size: 1.2rem;
+.sobre-mi-img {
+  flex: 1;
 }
 
-.portfolio-grid {
-    display: grid;
-    /* 3 columnas de igual ancho */
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    /* Al menos 3 filas con una altura mínima de 200px cada una */
-    grid-template-rows: repeat(3, minmax(200px, auto));
-    /* Espaciado entre elementos (menos arriba/abajo, más a los lados) */
-    gap: 15px 25px;
-    max-width: 1400px;
-    margin: 0 auto;
+.sobre-mi-img img {
+  width: 100%;
+  max-width: 450px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(17, 35, 71, 0.12);
 }
 
-.portfolio-item {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    display: flex;
+.sobre-mi-contenido {
+  flex: 1;
+  text-align: left;
+}
+
+.sobre-mi-contenido h2 {
+  color: #112347;
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+}
+
+.sobre-mi-contenido .subtitulo {
+  color: #8A34D1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.sobre-mi-contenido p {
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* Responsive para móvil */
+@media (max-width: 768px) {
+  .sobre-mi-container {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    transition: transform 0.3s ease;
-    font-weight: bold;
-    color: white;
     text-align: center;
+  }
+  
+  .sobre-mi-contenido {
+    text-align: center;
+  }
 }
 
-.portfolio-item:hover {
-    transform: translateY(-5px);
+/* =========================================
+   ESTILO UNIFICADO PARA BOTONES DE ACCIÓN
+   ========================================= */
+
+.btn-aura {
+    /* Indispensable para enlaces <a> que actúan como botones */
+    display: inline-block;     /* Permite aplicar padding, márgenes y ancho correctamente */
+    text-decoration: none;     /* Quita el subrayado feo por defecto de los enlaces */
+    font-family: inherit;      /* Asegura que use la misma fuente que el resto de la web */
+    
+    /* Tus estilos originales actualizados */
+    background-color: #FFFFFF;
+    color: #1E2947;            /* Azul marino oscuro */
+    padding: 14px 32px;
+    border-radius: 50px;       /* Estilo píldora */
+    font-weight: 600;
+    font-size: 1.2rem;
+    
+    /* Efectos visuales originales */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease; /* Transición suave para todos los cambios */
 }
 
-.item-1 { 
-    background-color: #3498db; 
-    /* Este elemento ocupará 2 filas de alto */
-    grid-row: span 2; 
+/* =========================================
+   EFECTO HOVER UNIFICADO
+   ========================================= */
+
+.btn-aura:hover {
+    background-color: #E1BEE7; /* Transición suave al lavanda */
+    color: #1E2947;            /* Mantenemos el texto oscuro para buen contraste */
+    transform: translateY(-3px); /* Efecto elevación */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada en hover */
+    text-decoration: none;     /* Asegura que no salga subrayado al pasar el ratón */
 }
-
-.item-2 { background-color: #e74c3c; }
-.item-3 { background-color: #2ecc71; }
-
-.item-4 { 
-    background-color: #9b59b6; 
-    /* Este elemento ocupará 2 columnas de ancho */
-    grid-column: span 2; 
-}
-
-.item-5 { background-color: #f1c40f; }
-.item-6 { background-color: #e67e22; }
-.item-7 { background-color: #3829be; }
 
 /*Footer inferior de la web*/
 .footer-copyright {
-    text-align: center;
-    margin-top: 40px;      /* Separa el copyright de las 3 columnas de arriba */
-    padding-top: 20px;     /* Espacio interno sobre el texto */
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;     /* Centrado vertical */
+    
+    margin: 20px 0px;        /* Mantiene la separación de las columnas de arriba */
+    padding: 20px 0;         /* 💥 Mismo relleno arriba que abajo (20px) para equilibrar */
+    min-height: 60px;        /* Altura mínima recomendada para que el área respire */
 }
 
 .footer-copyright p {
-    color: #1a2d56;        /* Un color gris más suave para que no resalte tanto */
-    font-size: 0.9rem;     /* Un tamaño de letra un poco más pequeño */
-    margin: 0;
+    color: #1a2d56;
+    font-size: 0.9rem;
+    margin: 0;               /* Nos aseguramos de eliminar cualquier margen residual del párrafo */
+    line-height: 1;          /* Ajusta la altura de línea para evitar desviaciones */
 }
 
 /*Botin que permite subir a la parte superior de la web*/
@@ -360,12 +399,15 @@ nav a:hover{
     right: 2rem;
     width: 50px;
     height: 50px;
-    background-color: #fba319; /* Color de fondo inicial */
+
+    background-color: #1a49a0; /* Color de fondo inicial */
     color: #ffffff;            /* Color de la flecha */
+
     border-radius: 50%;        /* Lo hace completamente redondo */
     display: flex;
     align-items: center;
     justify-content: center;
+
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
     z-index: 9999;             /* Se asegura de quedar por encima de todo */
     transition: all 0.3s ease; /* Transición suave para el efecto hover */
@@ -376,11 +418,15 @@ nav a:hover{
 .icono-flecha {
     width: 24px;
     height: 24px;
+    fill: currentColor;        /* Fuerza a que el SVG use el color #ffffff */
     pointer-events: none;
 }
 
 /* EFECTO HOVER (Al pasar el ratón) */
 .boton-subir:hover {
-    background-color: #be1e2d; /* Cambia al color rojo de tu logo */
-    transform: scale(1.1);     /* Crece un 10% en tamaño */
+    background-color: #9042de;  /* Cambia al Púrpura Vibrante */
+    transform: translateY(-4px) scale(1.08); /* Se eleva un poco y escala suavemente */
+    box-shadow: 0 12px 25px rgba(144, 66, 222, 0.45); /* La sombra se tiñe de violeta */
 }
+
+/*Pagina de galeria*/
