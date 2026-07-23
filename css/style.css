@@ -1,9 +1,15 @@
-/* Estilos de reseteo */
+/* =========
+   RESETEO
+   ========= */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+/* =============================================
+   ESTILO DEL CONTENEDOR PRINCIPAL Y TITULOS 
+   ============================================= */
 
 .container {
     /*Usamos el sistema grid, para crear el layaur de la web */
@@ -33,6 +39,10 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 700; /* Bold (puedes cambiarlo a 600 si prefieres Semi-Bold) */
     line-height: 1.2;
 }
+
+/* ====================
+   HEADER DE LA WEB
+   ==================== */
 
 header{
     background-color: #ffffff; /* Color de fondo solo para visualizarlo */
@@ -83,6 +93,10 @@ nav a:active {
 nav a:hover{
     color: #1a49a0; 
 }
+
+/* ================
+   SECCION HERO
+   ================ */
 
 /*Seccion Hero*/
 .hero{
@@ -135,6 +149,10 @@ nav a:hover{
     color:#fff;
     font-size: 1.8rem;
 }
+
+/* =======================
+   SECCIÓN SERVICIOS
+   ======================= */
 
 .servicios, .contacto{
     display:flex;
@@ -276,7 +294,9 @@ nav a:hover{
     margin-top: 5px;
 }
 
-/*Sección sobre mi*/
+/* =======================
+   SECCIóN SOBRE MI
+   ======================= */
 .sobre-mi {
   padding: 80px 20px;
   background-color: #f9f9fc; /* Un fondo ligeramente diferenciado del blanco */
@@ -342,7 +362,6 @@ nav a:hover{
 /* =========================================
    ESTILO UNIFICADO PARA BOTONES DE ACCIÓN
    ========================================= */
-
 .btn-aura {
     /* Indispensable para enlaces <a> que actúan como botones */
     display: inline-block;     /* Permite aplicar padding, márgenes y ancho correctamente */
@@ -362,10 +381,6 @@ nav a:hover{
     transition: all 0.3s ease; /* Transición suave para todos los cambios */
 }
 
-/* =========================================
-   EFECTO HOVER UNIFICADO
-   ========================================= */
-
 .btn-aura:hover {
     background-color: #E1BEE7; /* Transición suave al lavanda */
     color: #1E2947;            /* Mantenemos el texto oscuro para buen contraste */
@@ -374,7 +389,9 @@ nav a:hover{
     text-decoration: none;     /* Asegura que no salga subrayado al pasar el ratón */
 }
 
-/*Footer inferior de la web*/
+/* =========================================
+   FOOTER DE LA WEB
+   ========================================= */
 .footer-copyright {
     display: flex;
     justify-content: center; /* Centrado horizontal */
@@ -392,7 +409,9 @@ nav a:hover{
     line-height: 1;          /* Ajusta la altura de línea para evitar desviaciones */
 }
 
-/*Botin que permite subir a la parte superior de la web*/
+/* =========================================
+   BOTON QUE PERMITE SUBIR ARRIBA DE LA WEB
+   ========================================= */
 .boton-subir {
     position: fixed;
     bottom: 2rem;
@@ -424,9 +443,11 @@ nav a:hover{
 
 /* EFECTO HOVER (Al pasar el ratón) */
 .boton-subir:hover {
-    background-color: #9042de;  /* Cambia al Púrpura Vibrante */
+    /*background-color: #9042de;*/  /* Cambia al Púrpura Vibrante */
     transform: translateY(-4px) scale(1.08); /* Se eleva un poco y escala suavemente */
     box-shadow: 0 12px 25px rgba(144, 66, 222, 0.45); /* La sombra se tiñe de violeta */
 }
 
-/*Pagina de galeria*/
+/* =========================================
+   PAGINA DE CONTACTO
+   ========================================= */
