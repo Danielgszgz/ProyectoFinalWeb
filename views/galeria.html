@@ -22,8 +22,8 @@
                     <ul>
                         <li><a href="../index.html">Inicio</a></li>
                         <li><a href="#">Galeria</a></li>
-                        <li><a href="views/presupuesto.html">Presupuesto</a></li>
-                        <li><a href="views/contacto.html">Contacto</a></li>
+                        <li><a href="presupuesto.html">Presupuesto</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
             </header>
@@ -36,8 +36,8 @@
             </a>
 
             <!-- CABECERA PRINCIPAL TIPO HERO -->
-            <section class="galeria-hero">
-                <div class="galeria-hero-content">
+            <section class="hero-secundario">
+                <div class="hero-secundario-content">
                     <h1>Nuestra Galería</h1>
                     <p>Explora nuestras capturas divididas por momentos especiales.</p>
                     
@@ -67,7 +67,7 @@
                         <div class="foto-item">
                             <!-- Enlace al modal -->
                             <a href="#lightbox-boda2">
-                                <img src="../assets/img/galeria/boda_luismarta.jpg" alt="Boda de Luis y Marta" class="fotoboda2">
+                                <img src="../assets/img/galeria/boda_luismarta.jpg" alt="Boda de Luis y Marta" class="fotovertical">
                             </a>
                         </div>
                         <div class="foto-item">
@@ -86,7 +86,7 @@
                         <div class="foto-item">
                             <!-- Enlace al modal -->
                             <a href="#lightbox-comunion1">
-                                <img src="../assets/img/galeria/comunion_fabian.jpg" alt="Comunión de Fabian" class="fotocomunion1">
+                                <img src="../assets/img/galeria/comunion_fabian.jpg" alt="Comunión de Fabian" class="fotovertical">
                             </a>
                         </div>
                         <div class="foto-item">
@@ -108,8 +108,24 @@
                 <section id="bautizos" class="galeria-seccion">
                     <h2>Bautizos</h2>
                     <div class="grid-fotos">
-                        <div class="foto-item"><img src="assets/img/galeria/bautizo-1.jpg" alt="Bautizo 1"></div>
-                        <div class="foto-item"><img src="assets/img/galeria/bautizo-2.jpg" alt="Bautizo 2"></div>
+                        <div class="foto-item">
+                            <!-- Enlace al modal -->
+                            <a href="#lightbox-bautizo1">
+                                <img src="../assets/img/galeria/bautizo_ana.jpg" alt="Bautizo de Ana">
+                            </a>
+                        </div>
+                        <div class="foto-item">
+                            <!-- Enlace al modal -->
+                            <a href="#lightbox-bautizo2">
+                                <img src="../assets/img/galeria/bautizo_elena.jpg" alt="Bautizo de Elena">
+                            </a>
+                        </div>
+                        <div class="foto-item">
+                            <!-- Enlace al modal -->
+                            <a href="#lightbox-bautizo3">
+                                <img src="../assets/img/galeria/bautizo_brian.jpg" alt="Bautizo de Brian" class="fotovertical">
+                            </a>
+                        </div>
                     </div>
                 </section>
 
@@ -117,8 +133,24 @@
                 <section id="otros-eventos" class="galeria-seccion">
                     <h2>Otros Eventos</h2>
                     <div class="grid-fotos">
-                        <div class="foto-item"><img src="assets/img/galeria/evento-1.jpg" alt="Cumpleaños"></div>
-                        <div class="foto-item"><img src="assets/img/galeria/evento-2.jpg" alt="Sesión de fotos"></div>
+                        <div class="foto-item">
+                            <!-- Enlace al modal -->
+                            <a href="#lightbox-evento1">
+                                <img src="../assets/img/galeria/cumpleaños_maria.jpg" alt="Cumpleaños de Maria">
+                            </a>
+                        </div>
+                        <div class="foto-item">
+                            <!-- Enlace al modal -->
+                            <a href="#lightbox-evento2">
+                                <img src="../assets/img/galeria/evento-corporativo.jpg" alt="Evento de empresa">
+                            </a>
+                        </div>
+                        <div class="foto-item">
+                            <!-- Enlace al modal -->
+                            <a href="#lightbox-evento3">
+                                <img src="../assets/img/galeria/50años.jpg" alt="Celebración 50 años"  class="fotovertical">
+                            </a>
+                        </div>
                     </div>
                 </section>
 
@@ -187,6 +219,66 @@
             <div class="lightbox-contenido">
                 <a href="#comuniones" class="btn-cerrar">&times;</a>
                 <img src="../assets/img/galeria/comunion_lauracarlos.jpg" alt="Comunión de Laura y Carlos">
+            </div>
+        </div>
+
+        <div id="lightbox-bautizo1" class="lightbox">
+            <!-- Enlace transparente para cerrar al pulsar fuera o en la 'X' -->
+            <a href="#bautizos" class="lightbox-cerrar-bg"></a>
+            
+            <div class="lightbox-contenido">
+                <a href="#bautizos" class="btn-cerrar">&times;</a>
+                <img src="../assets/img/galeria/bautizo_ana.jpg" alt="Bautizo de Ana">
+            </div>
+        </div>
+
+        <div id="lightbox-bautizo2" class="lightbox">
+            <!-- Enlace transparente para cerrar al pulsar fuera o en la 'X' -->
+            <a href="#bautizos" class="lightbox-cerrar-bg"></a>
+            
+            <div class="lightbox-contenido">
+                <a href="#bautizos" class="btn-cerrar">&times;</a>
+                <img src="../assets/img/galeria/bautizo_elena.jpg" alt="Bautizo de Elena">
+            </div>
+        </div>
+
+        <div id="lightbox-bautizo3" class="lightbox">
+            <!-- Enlace transparente para cerrar al pulsar fuera o en la 'X' -->
+            <a href="#bautizos" class="lightbox-cerrar-bg"></a>
+            
+            <div class="lightbox-contenido">
+                <a href="#bautizos" class="btn-cerrar">&times;</a>
+                <img src="../assets/img/galeria/bautizo_brian.jpg" alt="Bautizo de Brian">
+            </div>
+        </div>
+
+        <div id="lightbox-evento1" class="lightbox">
+            <!-- Enlace transparente para cerrar al pulsar fuera o en la 'X' -->
+            <a href="#otros-eventos" class="lightbox-cerrar-bg"></a>
+            
+            <div class="lightbox-contenido">
+                <a href="#otros-eventos" class="btn-cerrar">&times;</a>
+                <img src="../assets/img/galeria/cumpleaños_maria.jpg" alt="Cumpleaños de Maria">
+            </div>
+        </div>
+
+        <div id="lightbox-evento2" class="lightbox">
+            <!-- Enlace transparente para cerrar al pulsar fuera o en la 'X' -->
+            <a href="#otros-eventos" class="lightbox-cerrar-bg"></a>
+            
+            <div class="lightbox-contenido">
+                <a href="#otros-eventos" class="btn-cerrar">&times;</a>
+                <img src="../assets/img/galeria/evento-corporativo.jpg" alt="Evento de empresa">
+            </div>
+        </div>
+
+        <div id="lightbox-evento3" class="lightbox">
+            <!-- Enlace transparente para cerrar al pulsar fuera o en la 'X' -->
+            <a href="#otros-eventos" class="lightbox-cerrar-bg"></a>
+            
+            <div class="lightbox-contenido">
+                <a href="#otros-eventos" class="btn-cerrar">&times;</a>
+                <img src="../assets/img/galeria/50años.jpg" alt="Celebración 50 años">
             </div>
         </div>
     </body>
