@@ -22,8 +22,8 @@
                     <ul>
                         <li><a href="../index.html">Inicio</a></li>
                         <li><a href="galeria.html">Galeria</a></li>
-                        <li><a href="#">Presupuesto</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="presupuesto.html">Presupuesto</a></li>
+                        <li><a href="#">Contacto</a></li>
                     </ul>
                 </nav>
             </header>
@@ -36,54 +36,48 @@
             </a>
 
             <!-- Contenido principal -->
-            <main>
+            <main class="contacto-main">
                 <!-- CABECERA PRINCIPAL TIPO HERO -->
                 <section class="hero-secundario">
                     <div class="hero-secundario-content">
-                        <h1>Calcula tu Presupuesto</h1>
-                        <p>Cuéntanos los detalles de tu evento y te enviaremos una propuesta personalizada sin compromiso.</p>
+                        <h1>Contacto</h1>
+                        <p>Estamos aquí para resolver tus dudas. Encuéntranos en nuestro estudio o envíanos un mensaje.</p>
                     </div>
                 </section>
-                <section class="presupuesto">
-                    <form action="#" method="POST" class="formulario-presupuesto">
-                        <!-- Campo: Nombre -->
-                        <div class="campo">
-                            <label for="nombre">Nombre *</label>
-                            <input type="text" id="nombre" name="nombre" required pattern="[A-Za-zÁeíóúÁÉÍÓÚñÑ\s]{3,20}" title="El nombre debe tener entre 3 y 20 letras (sin números ni símbolos)." placeholder="Ej. Maria Lopez">
+
+                <!-- UBICACIÓN Y MAPA -->
+                <section class="ubicacion-seccion">
+                    <h2>Dónde encontrarnos</h2>
+                    <div class="ubicacion-grid">
+                        
+                        <div class="ubicacion-datos">
+                            <p class="empresa-nombre">Aura Fotografía</p>
+                            <p>Calle Gran Vía, 15, 2ºB</p>
+                            <p>50006 Zaragoza, España</p>
+                            
+                            <hr class="separador-info">
+                            
+                            <p><strong>Teléfono:</strong> <a href="tel:976123456">976 12 34 56</a></p>
+                            <p><strong>Email:</strong> <a href="mailto:contacto@aurafotografia.es">contacto@aurafotografia.es</a></p>
+                            <p><strong>Horario:</strong> Lunes a Viernes de 09:00 a 19:00</p>
                         </div>
 
-                        <!-- Campo: Teléfono -->
-                        <div class="campo">
-                            <label for="telefono">Teléfono *</label>
-                            <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9}" title="Introduce un número de teléfono válido de 9 dígitos." placeholder="Ej. 666000111">
+                        <div class="mapa-contenedor">
+                            <img src="../assets/img/mapaAuraFotografia.png" alt="Mapa de localización del estudio Aura Fotografía en Calle Gran Vía, Zaragoza" title="Localización de Aura Fotografía">
                         </div>
 
-                        <!-- Campo: Email -->
-                        <div class="campo">
-                            <label for="email">Correo Electrónico *</label>
-                            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="Ej. nombre@correo.es" title="Introduce una direcciónde email válida">
-                        </div>
+                    </div>
+                </section>
 
-                        <!-- Campo: Más información (Multilínea) -->
-                        <div class="campo">
-                            <label for="mensaje">Más información</label>
-                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos más detalles sobre tu evento o consulta..."></textarea>
-                        </div>
-
-                        <!-- Campo: Política de privacidad (Checkbox) -->
-                        <div class="campo-checkbox">
-                            <input type="checkbox" id="privacidad" name="privacidad" required title="Debes aceptar la política de privacidad para enviar el formulario">>
-                            <label for="privacidad">
-                                He leído y acepto la <a href="privacidad.html" target="_blank">política de privacidad</a> *
-                            </label>
-                        </div>
-
-                        <!-- Botones -->
-                        <div class="acciones-formulario">
-                            <button type="submit" class="btn-enviar">Enviar</button>
-                            <button type="reset" class="btn-limpiar">Limpiar</button>
-                        </div>
-                    </form>
+                <!-- LLAMADA A LA ACCIÓN: PEDIR PRESUPUESTO -->
+                <section class="contacto-cta-seccion">
+                    <h2>¿Quieres trabajar con nosotros?</h2>
+                    <p>Si estás planeando un evento o necesitas una sesión fotográfica, calcula tu presupuesto personalizado en unos sencillos pasos.</p>
+                    
+                    <div class="cta-acciones">
+                        <a href="presupuesto.html" class="btn-cta-principal" title="Ir a la página para pedir presupuesto">Solicitar Presupuesto</a>
+                        <a href="galeria.html" class="btn-cta-secundario" title="Ver la galería de trabajos">Ver Galería</a>
+                    </div>
                 </section>
             </main>
             <!-- Pie de la web-->

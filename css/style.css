@@ -787,3 +787,169 @@ nav a:hover{
 .btn-limpiar:hover {
     background-color: #e2e8f0;
 }
+
+/* =======================
+   PÁGINA DE CONTACTO
+   ======================= */
+/* Contenedor general que centra todo en la página */
+.contacto-main {
+    width: 100%;
+    margin: 40px auto 80px auto;
+    padding: 0 20px;
+}
+
+/* Títulos H2 uniformes con el resto de la web */
+.contacto-main h2 {
+    color: #112347;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #9042de;
+    display: table;
+    padding-bottom: 5px;
+}
+
+
+/* ------------------------------------------
+   1. SECCIÓN UBICACIÓN (Plana, sin tarjetas)
+   ------------------------------------------ */
+.ubicacion-seccion {
+    max-width:1200px;
+    margin: 50px auto 60px auto;
+    padding: 20px 20px 0px;
+}
+
+.ubicacion-grid {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.ubicacion-datos {
+    flex: 1;
+    color: #333;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.empresa-nombre {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #1a49a0;
+    margin-bottom: 5px;
+}
+
+.separador-info {
+    border: 0;
+    border-top: 1px solid #e2e8f0;
+    margin: 15px 0;
+}
+
+.ubicacion-datos a {
+    color: #1a49a0;
+    text-decoration: none;
+}
+
+.ubicacion-datos a:hover {
+    text-decoration: underline;
+}
+
+/* Mapa integrado */
+.mapa-contenedor {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+.mapa-contenedor img {
+    width: 100%;
+    height: 100%;
+    max-height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ------------------------------------------
+   SECCIÓN LLAMADA A PRESUPUESTO (CTA)
+   ------------------------------------------ */
+.contacto-cta-seccion {
+    max-width:1200px;
+    margin: 50px auto 0px auto;
+    padding: 40px 20px 0px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.contacto-cta-seccion h2 {
+    color: #112347;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #9042de;
+    display: table;
+    padding-bottom: 5px;
+}
+
+.contacto-cta-seccion p {
+    color: #444;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 700px;
+}
+
+.cta-acciones {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Botón Principal (Presupuesto) */
+.btn-cta-principal {
+    display: inline-block;
+    background-color: #1a49a0;
+    color: #ffffff;
+    padding: 14px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-cta-principal:hover {
+    background-color: #9042de;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(144, 66, 222, 0.25);
+}
+
+/* Botón Secundario (Galería) */
+.btn-cta-secundario {
+    display: inline-block;
+    background-color: transparent;
+    color: #1a49a0;
+    padding: 12px 24px;
+    border: 2px solid #1a49a0;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-cta-secundario:hover {
+    background-color: #1a49a0;
+    color: #ffffff;
+}
+
+/* Adaptación para móviles */
+@media (max-width: 600px) {
+    .cta-acciones {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-cta-principal,
+    .btn-cta-secundario {
+        text-align: center;
+    }
+}
