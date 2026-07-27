@@ -1191,4 +1191,29 @@ nav a:hover {
         top: -35px;
         right: 10px;
     }
+
+    /*CSS responsive para el footer*/
+    /* Padding lateral para que respire y el texto centrado */
+    .footer-copyright {
+        padding: 20px 15px;
+    }
+
+    .footer-copyright p {
+        font-size: 0.8rem;
+        text-align: center;
+        line-height: 1.4; /* Permite un salto de línea cómodo si la pantalla es muy estrecha */
+    }
+
+    /* Reducimos un poco el botón flotante y lo alejamos del borde en móvil */
+    .boton-subir {
+        width: 40px;
+        height: 40px;
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    .icono-flecha {
+        width: 18px;
+        height: 18px;
+    }
 }
