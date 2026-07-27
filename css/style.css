@@ -1057,3 +1057,131 @@ nav a:hover {
         text-align: center;
     }
 }
+
+/* ===================================================
+   ADAPTACIÓN RESPONSIVE (PANTALLAS MEDIANAS Y MÓVILES)
+   =================================================== */
+
+/* --- TABLETS Y PANTALLAS MEDIANAS (Hasta 992px) --- */
+@media (max-width: 992px) {
+    header {
+        padding: 15px 25px;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .formulario-presupuesto {
+        width: 75%;
+    }
+
+    .ubicacion-grid {
+        gap: 30px;
+    }
+}
+
+/* --- MÓVILES (Hasta 768px) --- */
+@media (max-width: 768px) {
+    
+    /* 1. Header y Navegación */
+    header {
+        padding: 12px 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+    }
+
+    /* 2. Sección Hero (Título e Imagen de fondo) */
+    .hero {
+        padding: 40px 15px;
+        min-height: auto;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.2rem, 8vw, 3.2rem); /* Se escala dinámicamente según la pantalla */
+        max-width: 100%;
+        line-height: 1.15;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    /* 3. Sección Servicios */
+    .servicios {
+        padding: 40px 15px;
+        min-height: auto;
+    }
+
+    .servicios h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .tarjetas article, 
+    .tarjetas div {
+        width: 100%; /* Las tarjetas pasan a ocupar el 100% en móvil */
+        max-width: 340px;
+    }
+
+    /* 4. Formulario Presupuesto */
+    .presupuesto {
+        padding: 30px 15px;
+        min-height: auto;
+    }
+
+    .formulario-presupuesto {
+        width: 100%; /* Pasa de 50% al 100% de la pantalla */
+    }
+
+    .acciones-formulario {
+        flex-direction: column;
+    }
+
+    /* 5. Sección Ubicación y Mapa */
+    .ubicacion-seccion {
+        padding: 10px 15px;
+        margin: 20px auto;
+    }
+
+    .ubicacion-grid {
+        flex-direction: column; /* Apila los datos de contacto y el mapa */
+        gap: 25px;
+    }
+
+    .mapa-contenedor {
+        width: 100%;
+        margin-top: 0; /* Quita el margen negativo que solapaba en escritorio */
+        height: 280px;
+    }
+
+    .direccion-secundaria {
+        margin-left: 0; /* Desalinea el margen forzado para que no corte en pantallas pequeñas */
+    }
+
+    /* 6. Modales / Lightbox en móvil */
+    .lightbox-contenido img {
+        max-width: 95%;
+        max-height: 75vh;
+    }
+
+    .btn-cerrar {
+        top: -35px;
+        right: 10px;
+    }
+}
