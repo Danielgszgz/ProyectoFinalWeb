@@ -506,7 +506,8 @@ nav a:hover {
    HERO SECUNDARIO PARA LAS PÁGINAS
    ========================================== */
 .hero-secundario {
-    background-color: #f8f9fc; /* Fondo suave para diferenciar de la cabecera */
+    /*background-color: #f8f9fc;*/ /* Fondo suave para diferenciar de la cabecera */
+    background: radial-gradient(circle at center, #f3ebfc 0%, #f8f9fc 70%);
     padding: 60px 20px 40px;
     text-align: center;         /* Centra todo el texto y botones */
     border-bottom: 1px solid #eef0f6;
@@ -519,7 +520,7 @@ nav a:hover {
 
 .hero-secundario h1 {
     color: #112347;
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     margin-bottom: 10px;
 }
 

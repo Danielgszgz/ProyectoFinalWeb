@@ -5,10 +5,12 @@
 <- > He leído y acepto la política de privacidad * (En el form de presupuesto quitar >)
 <- En contacto, que la imagen del mapa se centre verticalmente
 <- ¿Quieres trabajar con nosotros?
-<Si estás planeando un evento o necesitas una sesión fotográfica, calcula tu presupuesto personalizado en unos sencillos pasos.
-<Poner algo en el texto referido al botón de galería
+<- Si estás planeando un evento o necesitas una sesión fotográfica, calcula tu presupuesto personalizado en unos sencillos pasos.
+<- Poner algo en el texto referido al botón de galería
 - Cambiar texto de teléfono, email y horario por iconos
 - Mapa que haga como las fotos de la galería y tenga un popup
+<- Header secundario, degradado en el fondo.
+
 
 - Revisar CSS
 - Revisar puntos del pdf
