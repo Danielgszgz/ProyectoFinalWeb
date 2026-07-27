@@ -1,15 +1,24 @@
 /* =========
-   RESETEO
+   RESETEO Y BASES
    ========= */
-* {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Scroll suave para que al pulsar en el enlace ancla la pantalla baje con fluidez */
+/* Scroll suave y prevención de desbordamiento horizontal */
 html {
     scroll-behavior: smooth;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* =============================================
