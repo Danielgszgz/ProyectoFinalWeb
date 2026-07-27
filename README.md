@@ -1,6 +1,6 @@
 # Proyecto Final Web
 
-Descripción breve de lo que hace tu aplicación o página web.
+Es la página web de un fotógrafo profesional, que hace fotografías en eventos como bodas, comuniones, bautizos y eventos de cualquier índole.
 
 ## Tecnologías utilizadas
 * HTML5
