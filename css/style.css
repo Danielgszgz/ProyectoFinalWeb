@@ -1095,14 +1095,21 @@ nav a:hover {
         gap: 15px;
     }
 
+    /* Contenedor del menú en móvil */
+    /* Evita que los enlaces salten de línea en pantallas pequeñas */
     nav ul {
-        gap: 10px;
-        flex-wrap: wrap;
-        justify-content: center;
+        gap: 6px;
+        flex-wrap: nowrap;
     }
 
-    nav a {
-        font-size: 0.95rem;
+    /* Mantiene un tamaño y padding constante antes y durante el hover/activo */
+    nav a,
+    nav a.activo,
+    nav a:hover {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+        transform: none; /* Desactiva el salto/brinco del hover en móvil */
+        white-space: nowrap;
     }
 
     /* 2. Sección Hero (Título e Imagen de fondo) */
