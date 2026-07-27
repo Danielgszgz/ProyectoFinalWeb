@@ -1,0 +1,16 @@
+<- Botones galería index, que lleve a las distintas secciones de la galería.
+- Si se puede espacio entre el sobre mi y el pie de pagina.
+<- Botones del menú de galería, que tengan algo del violeta.
+<- Botones del menú que tengan algo del violeta. (Por ejemplo que se marque el activo en violeta)
+<- > He leído y acepto la política de privacidad * (En el form de presupuesto quitar >)
+<- En contacto, que la imagen del mapa se centre verticalmente
+<- ¿Quieres trabajar con nosotros?
+<Si estás planeando un evento o necesitas una sesión fotográfica, calcula tu presupuesto personalizado en unos sencillos pasos.
+<Poner algo en el texto referido al botón de galería
+- Cambiar texto de teléfono, email y horario por iconos
+- Mapa que haga como las fotos de la galería y tenga un popup
+
+- Revisar CSS
+- Revisar puntos del pdf
+- Revisar responsive
+
