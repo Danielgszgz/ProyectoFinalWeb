@@ -905,6 +905,30 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* Alineación de datos con icono */
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+/* Estilo para los iconos de Font Awesome */
+.icono-contacto {
+    color: #FFD166; /* Tu dorado de resaltar */
+    font-size: 1.1rem;
+    width: 20px; /* Ancho fijo para alinear verticalmente todo el texto */
+    text-align: center;
+    flex-shrink: 0;
+    text-shadow: 2px 2px 2px rgba(26, 73, 160, 0.8);
+}
+
+/* Ajuste específico para que la segunda línea de dirección no se solape con el icono */
+.direccion-secundaria {
+    display: block;
+    margin-left: 32px; /* Alineado con el texto de arriba */
+}
+
 /* Mapa integrado */
 .mapa-contenedor {
     flex: 1;
@@ -920,6 +944,24 @@ nav a:hover {
     object-fit: cover;
     display: block;
     border-radius: 12px; /* Mantén el border-radius si ya lo tenías */
+}
+
+/*Popup de light para el mapa*/
+/* Indicador visual de clic para el mapa */
+.mapa-contenedor a {
+    display: block;
+    cursor: zoom-in;
+    width: 100%;
+    height: 100%;
+}
+
+.mapa-contenedor img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.mapa-contenedor:hover img {
+    transform: scale(1.02);
+    filter: brightness(1.05);
 }
 
 

@@ -46,7 +46,7 @@
                 </section>
 
                 <!-- UBICACIÓN Y MAPA -->
-                <section class="ubicacion-seccion">
+                <section class="ubicacion-seccion" id="contacto">
                     <h2>Dónde encontrarnos</h2>
                     <div class="ubicacion-grid">
                         
@@ -57,13 +57,24 @@
                             
                             <hr class="separador-info">
                             
-                            <p><strong>Teléfono:</strong> <a href="tel:976123456">976 12 34 56</a></p>
-                            <p><strong>Email:</strong> <a href="mailto:contacto@aurafotografia.es">contacto@aurafotografia.es</a></p>
-                            <p><strong>Horario:</strong> Lunes a Viernes de 09:00 a 19:00</p>
+                            <p class="info-item">
+                                <i class="fa-solid fa-phone icono-contacto"></i> 
+                                <a href="tel:976123456">976 12 34 56</a>
+                            </p>
+                            <p class="info-item">
+                                <i class="fa-solid fa-envelope icono-contacto"></i> 
+                                <a href="mailto:contacto@aurafotografia.es">contacto@aurafotografia.es</a>
+                            </p>
+                            <p class="info-item">
+                                <i class="fa-solid fa-clock icono-contacto"></i> 
+                                Lunes a Viernes de 09:00 a 19:00
+                            </p>
                         </div>
 
                         <div class="mapa-contenedor">
-                            <img src="../assets/img/mapaAuraFotografia.png" alt="Mapa de localización del estudio Aura Fotografía en Calle Gran Vía, Zaragoza" title="Localización de Aura Fotografía">
+                            <a href="#lightbox-mapa">
+                                <img src="../assets/img/mapaAuraFotografia.png" alt="Mapa de localización del estudio Aura Fotografía en Calle Gran Vía, Zaragoza" title="Localización de Aura Fotografía">
+                            </a>
                         </div>
 
                     </div>
@@ -80,9 +91,22 @@
                     </div>
                 </section>
             </main>
+
             <!-- Pie de la web-->
             <div class="footer-copyright">
                 <p>&copy; 2026 Aura Fotografía. Todos los derechos reservados.</p>
+            </div>
+
+            <!-- Lightbox / Popup del Mapa -->
+            <div id="lightbox-mapa" class="lightbox">
+                <!-- Enlace transparente para cerrar al pulsar fuera o en la 'X' -->
+                <a href="#contacto" class="lightbox-cerrar-bg"></a>
+                
+                <div class="lightbox-contenido">
+                    <a href="#contacto" class="btn-cerrar">&times;</a>
+                    <img src="../assets/img/mapaAuraFotografia.png" 
+                        alt="Mapa de localización del estudio Aura Fotografía en Calle Gran Vía, Zaragoza">
+                </div>
             </div>
         </div>
     </body>

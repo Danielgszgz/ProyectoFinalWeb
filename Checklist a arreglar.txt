@@ -7,8 +7,8 @@
 <- ¿Quieres trabajar con nosotros?
 <- Si estás planeando un evento o necesitas una sesión fotográfica, calcula tu presupuesto personalizado en unos sencillos pasos.
 <- Poner algo en el texto referido al botón de galería
-- Cambiar texto de teléfono, email y horario por iconos
-- Mapa que haga como las fotos de la galería y tenga un popup
+<- Cambiar texto de teléfono, email y horario por iconos
+<- Mapa que haga como las fotos de la galería y tenga un popup
 <- Header secundario, degradado en el fondo.
 
 
