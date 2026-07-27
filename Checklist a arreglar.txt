@@ -14,5 +14,5 @@
 
 - Revisar CSS
 - Revisar puntos del pdf
-- Revisar responsive
+<- Revisar responsive
 
