@@ -1,5 +1,5 @@
 /* =========
-   RESETEO Y BASES
+   RESETEO Y CSS BASE
    ========= */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -7,18 +7,17 @@
     padding: 0;
 }
 
-/* Scroll suave y prevención de desbordamiento horizontal */
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Scroll suave y prevención de desbordamiento horizontal */
     width: 100%;
     max-width: 100%;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/ /*Para que no haya scroll horizontal*/
 }
 
 body {
     width: 100%;
     max-width: 100%;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/ /*Para que no haya scroll horizontal*/
 }
 
 /* =============================================
