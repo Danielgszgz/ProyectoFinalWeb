@@ -12,7 +12,7 @@
 <- Header secundario, degradado en el fondo.
 
 
-- Revisar CSS
+<- Revisar CSS
 - Revisar puntos del pdf
 <- Revisar responsive
 
